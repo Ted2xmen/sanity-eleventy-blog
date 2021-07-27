@@ -2,6 +2,12 @@ const { DateTime } = require("luxon");
 const util = require('util')
 const CleanCSS = require("clean-css");
 
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(syntaxHighlight);
+};
+
 module.exports = function(eleventyConfig) {
 
   // https://www.11ty.io/docs/quicktips/inline-css/
@@ -68,4 +74,6 @@ module.exports = function(eleventyConfig) {
       output: "_site"
     }
   };
+
+ 
 }
