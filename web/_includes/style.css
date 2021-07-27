@@ -2,14 +2,14 @@
 html {
     font-size: 15px;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body {
     width: 87.5%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 12.5%;
-    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    background-color: #444415;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e7e7e7;
     color: #111;
     max-width: 1400px;
     counter-reset: sidenote-counter;
