@@ -10,7 +10,10 @@
   
   
   <li class="p-2 list-group-item postlist-item{% if post.url == url %} postlist-item-active{% endif %}"> 
-        {% imageUrlFor imageObject, 900 %}
+
+  
+<img src="{% imageUrlFor imageObject, 50 %}" alt="">
+        
 
     <a href="{{ post.url | url }}" class="postlist-link">{% if currentPost.title %}{{ currentPost.title }}{% else %}<code>{{ post.url }}</code>{% endif %} ||</a>
 
