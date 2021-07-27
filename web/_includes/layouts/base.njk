@@ -16,9 +16,14 @@
       {{ css | cssmin | safe }}
     </style>
   </head>
+
+
+
+
   <body>
 
 
+<section id="nav">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -35,7 +40,7 @@
         
 
         <button type="button" class="btn btn-outline-success">
-        
+
         <a href="{{ nav.url | url }}">
         {{ nav.data.navtitle }}
 
@@ -57,26 +62,29 @@
     </div>
   </div>
 </nav>
+</section>
 
 
 
 
-
-
+<section id="header">
     <header>
       <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
       <h2 class="text-lowercase"> Bootstrap, Sanity ve Eleventy ile Kendi Blogumu yapıyorum <h2>
     </header>
+</section>
 
-
-
+<section id="content">
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {{ content | safe }}
     </main>
+</section>
 
+<section id="footer">
     <footer>
-        <p><em>This is an <a href="https://www.11ty.io/">Eleventy</a> + <a href="https://www.sanity.io">Sanity.io</a> project made by <a href="https://github.com/Ted2xmen"><code>eleventy-base-blog</code> Tuğrul aka "Ted2xmen"</a>.</em></p>
+        <p><em>This is an <a href="https://www.11ty.io/">Eleventy</a> + <a href="https://www.sanity.io">Sanity.io</a> project made by Ted2xmen</em></p>
     </footer>
+</section>
 
     <!-- Current page: {{ page.url | url }} -->
 
