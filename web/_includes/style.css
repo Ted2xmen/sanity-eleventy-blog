@@ -1,8 +1,9 @@
 /* Tufte-ish CSS styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 html {
     font-size: 12px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
     /* width: 87.5%; */
     /* margin-left: auto;
@@ -27,81 +28,81 @@ h1.home {
   font-size: 2.1rem;
 }
 
-h2 {
+/* h2 {
     
     font-weight: 400;
     margin-top: 2.1rem;
     margin-bottom: 1.4rem;
     font-size: 2.2rem;
     line-height: 1;
-}
+} */
 
-h3 {
+/* h3 {
    
     font-weight: 400;
     font-size: 1.7rem;
     margin-top: 2rem;
     margin-bottom: 1.4rem;
     line-height: 1;
-}
+} */
 
-article {
+/* article {
     padding: 5rem 0rem;
 }
 
 section {
     padding-top: 1rem;
     padding-bottom: 1rem;
-}
+} */
 
-p,
+/* p,
 ol,
 ul {
     font-size: 1.4rem;
     line-height: 2rem;
-}
-
+} */
+/* 
 p {
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
     padding-right: 0;
     vertical-align: baseline;
     max-width: 700px;
-}
+} */
 
-blockquote {
+/* blockquote {
     font-size: 1.4rem;
 }
 
 blockquote p {
     width: 55%;
     margin-right: 40px;
-}
+} */
 
-blockquote footer {
+/* blockquote footer {
     width: 55%;
     font-size: 1.1rem;
     text-align: right;
-}
+} */
 
-section > p,
+/* section > p,
 section > footer,
 section > table {
     width: 55%;
-}
+} */
 
 /* 50 + 5 == 55, to be the same width as paragraph */
-section > ol,
+/* section > ol,
 section > ul {
     width: 50%;
     -webkit-padding-start: 5%;
-}
+} */
 
-li:not(:first-child) {
+/* li:not(:first-child) {
     margin-top: 0.25rem;
-}
+} */
 
-figure {
+/* figure {
     padding: 0;
     border: 0;
     font-size: 100%;
@@ -111,9 +112,9 @@ figure {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     margin: 0 0 3em 0;
-}
+} */
 
-figcaption {
+/* figcaption {
     float: right;
     clear: right;
     margin-top: 0;
@@ -127,13 +128,13 @@ figcaption {
 
 figure.fullwidth figcaption {
     margin-right: 24%;
-}
+} */
 
 /* Links: replicate underline that clears descenders */
-a:link,
+/* a:link,
 a:visited {
     color: inherit;
 }
 a:hover {
   text-decoration: none;
-}
+} */
