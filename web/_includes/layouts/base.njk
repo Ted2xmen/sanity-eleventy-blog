@@ -18,8 +18,6 @@
   </head>
 
 
-
-
   <body>
 
 
@@ -65,25 +63,36 @@
 </section>
 
 
-          
-
 
 <section id="header">
 <div class="container">
     <header>
     <div class="row">
       <div class="col-md-9">
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-      <h2 class="text-lowercase"> Bootstrap, Sanity ve Eleventy ile Kendi Blogumu yapıyorum <h2>
+      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ted2xmen/sanity-eleventy-blog"></h1>
+      <h2 class="text-lowercase"> 
+       
+      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ted2xmen/sanity-eleventy-blog">
+
+      <h2>
       </div>
 
 
       <div class="col-md-3">
-          <img src="https://pbs.twimg.com/profile_images/1392896862093459456/tcTntWXP_400x400.jpg" alt="me">
+          <img src="https://pbs.twimg.com/profile_images/1392896862093459456/tcTntWXP_400x400.jpg" alt="me" width="200px" height="200px">
       </div>
 
       </div>
     </header>
+</div>
+</section>
+
+
+<section id="content">
+<div class="container">
+    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      {{ content | safe }}
+    </main>
 </div>
 </section>
 
@@ -163,17 +172,6 @@
 
 
 </div>
-</div>
-</section>
-
-
-
-
-<section id="content">
-<div class="container">
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      {{ content | safe }}
-    </main>
 </div>
 </section>
 
