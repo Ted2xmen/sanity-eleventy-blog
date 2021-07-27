@@ -22,7 +22,8 @@
       <h2 class="text-lowercase"> Bootstrap, Sanity ve Eleventy ile Kendi Blogumu yapıyorum <h2>
       <ul class="nav">
         {%- for nav in collections.nav | reverse -%}
-        <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
+        <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}"> <button type="button" class="btn btn-outline-success">{{ nav.data.navtitle }}</button></a></li>
+        
         {%- endfor -%}
       </ul>
     </header>
