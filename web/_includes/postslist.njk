@@ -9,9 +9,10 @@
   {% set currentPost = post.data.post %}
   
   
-  <li class="p-2 list-group-item postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+  <li class="p-2 list-group-item postlist-item{% if post.url == url %} postlist-item-active{% endif %}"> 
+        {% imageUrlFor imageObject, 900 %}
 
-    <a href="{{ post.url | url }}" class="postlist-link">{% if currentPost.title %}{{ currentPost.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+    <a href="{{ post.url | url }}" class="postlist-link">{% if currentPost.title %}{{ currentPost.title }}{% else %}<code>{{ post.url }}</code>{% endif %} ||</a>
 
     <time class="postlist-date" datetime="{{ currentPost.publishedAt }}">{{ currentPost.publishedAt|readableDate }}</time>
 
