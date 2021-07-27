@@ -65,25 +65,32 @@
 </section>
 
 
+          
 
 
 <section id="header">
+<div class="container">
     <header>
       <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
       <h2 class="text-lowercase"> Bootstrap, Sanity ve Eleventy ile Kendi Blogumu yapıyorum <h2>
     </header>
+</div>
 </section>
 
 <section id="content">
+<div class="container">
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {{ content | safe }}
     </main>
+</div>
 </section>
 
 <section id="footer">
+<div class="container">
     <footer>
         <p><em>This is an <a href="https://www.11ty.io/">Eleventy</a> + <a href="https://www.sanity.io">Sanity.io</a> project made by Ted2xmen</em></p>
     </footer>
+</div>
 </section>
 
     <!-- Current page: {{ page.url | url }} -->
