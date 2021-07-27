@@ -161,3 +161,12 @@ a:hover {
     text-decoration: underline;
 
  }  
+
+ .radius {
+    border-radius: 25px;
+  }
+
+  .morder {
+    border: 1px solid ;
+    border-color: #222e3c;
+  }

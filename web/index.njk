@@ -6,24 +6,59 @@ navtitle: Home
 ---
 
 
+
+
+
+
+<section>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+	<h3 class="fw-bold">Portfolio</h3>
+	
+<img src="https://ted2xmen.github.io/Projects/assets/ted2xmen.png" width="440px;" class="rounded float-start" alt="...">
+	
+	</div>
+
+
+    <div class="col-sm-9">
+	
+	<h3 class="fw-bold">Latest Posts</h3>
+
+{% set postslist = collections.myPosts %}
+{% include "postslist.njk" %}
+
+
+<div class="alert alert-secondary" role="alert">
+  <p>More posts can be found in <a href="{{ '/posts/' | url }}"><b>the archive</b></a>.</p>
+</div>
+
+</div>
+  </div>
+
+  </div>
+
+</section>
+
 <section id="slider">
 <div class="container p-2">
-<h2 class="fw-bold"> Categories </h2>
+<h2 class="fw-bold"> Projects </h2>
 <div class="row row-cols-1 row-cols-md-3 g-3">
 
 <div class="col">
 			<div class="card hover morder radius">
 				  <div class="row">
 					  <div class="col-md-2  ">
-						  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Medium_logo_Monogram.svg/1024px-Medium_logo_Monogram.svg.png" style="width: 75px;" class="m-1 radius card-img-top  ml-5" alt="..."> 
+						  <img src="https://ted2xmen.github.io/Projects/assets/kronika.png" style="width: 75px;" class="m-1 radius card-img-top  ml-5" alt="..."> 
 					  </div>  		
 					  <div class="col-md-10 "> 
-						  <h5 class="card-title text-warning   pt-4">JavaScript</h5>
+						  <h5 class="card-title text-dark m-4 pt-1">Kronika</h5>
 					  </div>  
 				  </div>
 					  <div class="card-body">			
-						  <p class="card-text fs-5 text text-muted">Learn Without Limits</p>
-						  <span class="text-muted"><span class="badge bg-primary">Primary</span>&nbsp;<span class="badge bg-success">Success</span>&nbsp;<span class="badge bg-info text-light">Info minfo</span> &nbsp;</span>
+						  <p class="card-text fs-5 text text-muted"></p>
+						  <span class="text-muted"><span class="badge bg-primary">JavaScript</span>&nbsp;<span class="badge bg-success">Bootstrap</span>&nbsp; &nbsp;</span>
 					  </div> 
 			  </div>
 		  </div>
@@ -35,15 +70,15 @@ navtitle: Home
 			<div class="card hover morder radius">
 				  <div class="row">
 					  <div class="col-md-2  ">
-						  <img src="https://arastirmanv4.vercel.app/assets/images/logos/coursera.png" style="width: 75px;" class="m-1 radius card-img-top  ml-5" alt="..."> 
+						  <img src="https://ted2xmen.github.io/Projects/assets/searchon.png" style="width: 75px;" class="m-1 radius card-img-top  ml-5" alt="..."> 
 					  </div>  		
 					  <div class="col-md-10 "> 
-						  <h5 class="card-title text-warning   pt-4">Coursera</h5>
+						  <h5 class="card-title text-dark m-4 pt-1">SearchON</h5>
 					  </div>  
 				  </div>
 					  <div class="card-body">			
-						  <p class="card-text fs-5 text text-muted">Learn Without Limits</p>
-						  <span class="text-muted"><span class="badge bg-primary">Primary</span>&nbsp;<span class="badge bg-success">Success</span>&nbsp;<span class="badge bg-info text-light">Info minfo</span> &nbsp;</span>
+						  <p class="card-text fs-5 text text-muted"></p>
+						  <span class="text-muted"><span class="badge bg-primary">JavaScript</span>&nbsp;<span class="badge bg-success">Bootstrap</span>&nbsp; &nbsp;</span>
 					  </div> 
 			  </div>
 		  </div>
@@ -51,16 +86,16 @@ navtitle: Home
       <div class="col">
 			<div class="card hover morder radius">
 				  <div class="row">
-					  <div class="col-md-2  ">
-						  <img src="https://arastirmanv4.vercel.app/assets/images/logos/coursera.png" style="width: 75px;" class="m-1 radius card-img-top  ml-5" alt="..."> 
+					  <div class="col-md-2">
+						  <img src=" " style="width: 75px;" class="m-1 radius card-img-top  ml-5" alt="..."> 
 					  </div>  		
 					  <div class="col-md-10 "> 
-						  <h5 class="card-title text-warning   pt-4">Coursera</h5>
+						  <h5 class="card-title text-dark m-4   pt-1">Araştırman</h5>
 					  </div>  
 				  </div>
 					  <div class="card-body">			
-						  <p class="card-text fs-5 text text-muted">Learn Without Limits</p>
-						  <span class="text-muted"><span class="badge bg-primary">Primary</span>&nbsp;<span class="badge bg-success">Success</span>&nbsp;<span class="badge bg-info text-light">Info minfo</span> &nbsp;</span>
+						  <p class="card-text fs-5 text text-muted"></p>
+						  <span class="text-muted"><span class="badge bg-primary">JavaScript</span>&nbsp;<span class="badge bg-success">Bootstrap</span>&nbsp; &nbsp;</span>
 					  </div> 
 			  </div>
 		  </div>
@@ -68,16 +103,3 @@ navtitle: Home
 </div>
 </div>
 </section>
-
-
-<h3 class="fw-bold">Latest Posts</h3>
-
-{% set postslist = collections.myPosts %}
-{% include "postslist.njk" %}
-
-
-
-<div class="alert alert-secondary" role="alert">
-  <p>More posts can be found in <a href="{{ '/posts/' | url }}"><b>the archive</b></a>.</p>
-</div>
-
