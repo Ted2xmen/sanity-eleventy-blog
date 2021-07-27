@@ -24,20 +24,20 @@
 <section id="nav">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">WEB</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
       
-         {%- for nav in collections.nav | reverse -%}
+         {%- for nav in collections.nav  -%}
 
-        <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
+        <li class="m-1 nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
 
         
 
-        <button type="button" class="btn btn-outline-success">
+        <button type="button" class="btn btn-outline-dark">
 
         <a href="{{ nav.url | url }}">
         {{ nav.data.navtitle }}
@@ -50,10 +50,21 @@
     
         {%- endfor -%}
 
-         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Ted2xmen" target="_blank">Github</a>
+         
+      <li class="m-1 nav-item">
+
+        
+
+        <button type="button" class="btn btn-outline-dark">
+
+        <a href="/posts/">
+        Archive
+
+        </a>
+        </button>
+
+       
         </li>
-      
       
        
       </ul>
@@ -72,10 +83,41 @@
   
         <div class="col-md-9">
               <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ted2xmen/sanity-eleventy-blog"></h1>
+
+
+<div class="container">
+  <div class="row row row-cols-1 row-cols-md-3 g-2">
+    <div class="col">
+      <div class="card hover">
+        <div class="card-body">
+          <span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Medium_logo_Monogram.svg/1200px-Medium_logo_Monogram.svg.png" alt="" style="width: 24px;"></span> <a href="https://ted2xmen.medium.com/list/react-c6e687c31344" target="_blank">Medium</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card hover">
+        <div class="card-body">
+          <span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="width: 24px;"></span> <a href="https://github.com/Ted2xmen/" target="_blank">Github</a>
+        </div>
+      </div>
+    </div>
+	
+    <div class="col">
+      <div class="card hover">
+        <div class="card-body">
+          <span><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1116997/codepen.png" alt="" style="width: 24px;"></span> <a href="https://codepen.io/ted2xmen" target="_blank">Codepen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+			  
         </div>
         
         <div class="col-md-3">
-            <img src="https://pbs.twimg.com/profile_images/1392896862093459456/tcTntWXP_400x400.jpg" alt="me" width="200px" height="200px">
+            <img src="https://pbs.twimg.com/profile_images/1392896862093459456/tcTntWXP_400x400.jpg" alt="me" width="250px" height="250px">
         </div>
     </div>
   </header>     
@@ -84,92 +126,36 @@
   </section>
 
 
+<section id="second-header">
+<div class="container">
+
+
+		
+
+
+
+</div>
+</section>
+
+
+
+
 <section id="content">
 <div class="container">
+
+
+
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {{ content | safe }}
     </main>
+
 </div>
 </section>
 
 
-<section id="slider">
-<div class="container p-2">
-<div class="row row-cols-1 row-cols-md-4 g-3">
-
-<div class="col">
-			<div class="card hover morder radius">
-				  <div class="row">
-					  <div class="col-md-2  ">
-						  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Medium_logo_Monogram.svg/1024px-Medium_logo_Monogram.svg.png" style="width: 75px;" class="m-1 radius card-img-top  ml-5" alt="..."> 
-					  </div>  		
-					  <div class="col-md-10 "> 
-						  <h5 class="card-title text-warning   pt-4">Coursera</h5>
-					  </div>  
-				  </div>
-					  <div class="card-body">			
-						  <p class="card-text fs-5 text text-muted">Learn Without Limits</p>
-						  <span class="text-muted"><span class="badge bg-primary">Primary</span>&nbsp;<span class="badge bg-success">Success</span>&nbsp;<span class="badge bg-info text-light">Info minfo</span> &nbsp;</span>
-					  </div> 
-			  </div>
-		  </div>
-
-      <div class="col">
-			<div class="card hover morder radius">
-				  <div class="row">
-					  <div class="col-md-2  ">
-						  <img src="https://arastirmanv4.vercel.app/assets/images/logos/coursera.png" style="width: 75px;" class="m-1 radius card-img-top  ml-5" alt="..."> 
-					  </div>  		
-					  <div class="col-md-10 "> 
-						  <h5 class="card-title text-warning   pt-4">Coursera</h5>
-					  </div>  
-				  </div>
-					  <div class="card-body">			
-						  <p class="card-text fs-5 text text-muted">Learn Without Limits</p>
-						  <span class="text-muted"><span class="badge bg-primary">Primary</span>&nbsp;<span class="badge bg-success">Success</span>&nbsp;<span class="badge bg-info text-light">Info minfo</span> &nbsp;</span>
-					  </div> 
-			  </div>
-		  </div>
 
 
-         <div class="col">
-			<div class="card hover morder radius">
-				  <div class="row">
-					  <div class="col-md-2  ">
-						  <img src="https://arastirmanv4.vercel.app/assets/images/logos/coursera.png" style="width: 75px;" class="m-1 radius card-img-top  ml-5" alt="..."> 
-					  </div>  		
-					  <div class="col-md-10 "> 
-						  <h5 class="card-title text-warning   pt-4">Coursera</h5>
-					  </div>  
-				  </div>
-					  <div class="card-body">			
-						  <p class="card-text fs-5 text text-muted">Learn Without Limits</p>
-						  <span class="text-muted"><span class="badge bg-primary">Primary</span>&nbsp;<span class="badge bg-success">Success</span>&nbsp;<span class="badge bg-info text-light">Info minfo</span> &nbsp;</span>
-					  </div> 
-			  </div>
-		  </div>
 
-      <div class="col">
-			<div class="card hover morder radius">
-				  <div class="row">
-					  <div class="col-md-2  ">
-						  <img src="https://arastirmanv4.vercel.app/assets/images/logos/coursera.png" style="width: 75px;" class="m-1 radius card-img-top  ml-5" alt="..."> 
-					  </div>  		
-					  <div class="col-md-10 "> 
-						  <h5 class="card-title text-warning   pt-4">Coursera</h5>
-					  </div>  
-				  </div>
-					  <div class="card-body">			
-						  <p class="card-text fs-5 text text-muted">Learn Without Limits</p>
-						  <span class="text-muted"><span class="badge bg-primary">Primary</span>&nbsp;<span class="badge bg-success">Success</span>&nbsp;<span class="badge bg-info text-light">Info minfo</span> &nbsp;</span>
-					  </div> 
-			  </div>
-		  </div>
-
-
-</div>
-</div>
-</section>
 
 <section id="footer">
 <div class="container">

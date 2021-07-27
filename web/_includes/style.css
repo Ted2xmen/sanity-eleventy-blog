@@ -10,7 +10,7 @@ body {
     margin-right: auto; */
     /* padding-left: 12.5%; */
     font-family: 'Roboto', sans-serif;
-    background-color: #e7e7e7;
+    background-color: #ffffff;
     color: #111;
     /* max-width: 1400px; */
     counter-reset: sidenote-counter;
@@ -131,15 +131,20 @@ figure.fullwidth figcaption {
 } */
 
  /* Links: replicate underline that clears descenders */
+
+a {
+    text-decoration: none;
+
+}
+
  a:link,
 a:visited {
     color: inherit;
 }
 
 a:hover {
-  text-decoration: none;
-} 
 
+} 
 
 .hover{     
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
@@ -151,3 +156,8 @@ a:hover {
      transform: scale(1.05);
      box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
    }
+
+ b {
+    text-decoration: underline;
+
+ }  

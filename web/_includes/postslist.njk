@@ -2,20 +2,18 @@
 
 
 
-<ol reversed class="list-group list-group-flush postlist" style="counter-reset: start-from {{ postslist.length + 1 }}">
+<ol reversed class=" list-group list-group-flush postlist" style="counter-reset: start-from {{ postslist.length + 1 }}">
 
   {% for post in postslist | reverse %}
 
   {% set currentPost = post.data.post %}
-  
-  
-  <li class="p-2 list-group-item postlist-item{% if post.url == url %} postlist-item-active{% endif %}"> 
 
   
-<img src="{% imageUrlFor imageObject, 50 %}" alt="">
-        
+  
+  <li class=" p-2 list-group-item postlist-item{% if post.url == url %} postlist-item-active{% endif %}"> 
+      
 
-    <a href="{{ post.url | url }}" class="postlist-link">{% if currentPost.title %}{{ currentPost.title }}{% else %}<code>{{ post.url }}</code>{% endif %} ||</a>
+    <a href="{{ post.url | url }}" class="postlist-link">{% if currentPost.title %}{{ currentPost.title }}{% else %}<code>{{ post.url }}</code>{% endif %} </a>
 
     <time class="postlist-date" datetime="{{ currentPost.publishedAt }}">{{ currentPost.publishedAt|readableDate }}</time>
 
