@@ -1,7 +1,7 @@
 /* Tufte-ish CSS styles */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 html {
-    font-size: 12px;
+    font-size: 18px;
 }
 
 body {
@@ -46,22 +46,22 @@ h1.home {
     line-height: 1;
 } */
 
-/* article {
+ article {
     padding: 5rem 0rem;
 }
 
 section {
     padding-top: 1rem;
     padding-bottom: 1rem;
-} */
+} 
 
-/* p,
+ p,
 ol,
 ul {
     font-size: 1.4rem;
     line-height: 2rem;
-} */
-/* 
+} 
+ 
 p {
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
@@ -85,22 +85,22 @@ blockquote p {
     text-align: right;
 } */
 
-/* section > p,
+section > p,
 section > footer,
 section > table {
     width: 55%;
-} */
+} 
 
-/* 50 + 5 == 55, to be the same width as paragraph */
-/* section > ol,
+ 50 + 5 == 55, to be the same width as paragraph */
+ section > ol,
 section > ul {
     width: 50%;
     -webkit-padding-start: 5%;
-} */
+} 
 
-/* li:not(:first-child) {
+ li:not(:first-child) {
     margin-top: 0.25rem;
-} */
+} 
 
 /* figure {
     padding: 0;
@@ -130,11 +130,12 @@ figure.fullwidth figcaption {
     margin-right: 24%;
 } */
 
-/* Links: replicate underline that clears descenders */
-/* a:link,
+ /* Links: replicate underline that clears descenders */
+ a:link,
 a:visited {
     color: inherit;
 }
+
 a:hover {
   text-decoration: none;
-} */
+} 
